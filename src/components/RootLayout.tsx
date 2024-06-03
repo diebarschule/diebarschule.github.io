@@ -59,7 +59,7 @@ function Header({
   invert?: boolean
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
-
+  console.log(expanded)
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -71,18 +71,18 @@ function Header({
         >
           <Logomark
             className="h-8 sm:hidden"
-            invert={invert}
+            invert={expanded}
             filled={logoHovered}
           />
           <Logo
             className="hidden h-8 sm:block"
-            invert={invert}
+            invert={expanded}
             filled={logoHovered}
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
+          <Button href="/contact" invert={expanded}>
+            Kontaktiere uns
           </Button>
           <button
             ref={toggleRef}
@@ -92,14 +92,14 @@ function Header({
             aria-controls={panelId}
             className={clsx(
               'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10',
+              expanded ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10',
             )}
             aria-label="Toggle navigation"
           >
             <Icon
               className={clsx(
                 'h-6 w-6',
-                invert
+                expanded
                   ? 'fill-white group-hover:fill-neutral-200'
                   : 'fill-neutral-950 group-hover:fill-neutral-700',
               )}
@@ -143,13 +143,12 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/termine">Termine</NavigationItem>
+        <NavigationItem href="/about">Über uns</NavigationItem>
       </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
+     <NavigationRow>
+        <NavigationItem href="/impressum">Impressum</NavigationItem>
+      </NavigationRow> 
     </nav>
   )
 }
@@ -233,19 +232,19 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                    Unser Standort
                     </h2>
                     <Offices
                       invert
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-                  <div className="sm:border-l sm:border-transparent sm:pl-16">
+                 {/*  <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
                     </h2>
                     <SocialMedia className="mt-6" invert />
-                  </div>
+                  </div> */}
                 </div>
               </Container>
             </div>
