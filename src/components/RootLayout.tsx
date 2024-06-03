@@ -59,7 +59,6 @@ function Header({
   invert?: boolean
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
-  console.log(expanded)
   return (
     <Container>
       <div className="flex items-center justify-between">
