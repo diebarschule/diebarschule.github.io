@@ -3,18 +3,17 @@ import { type Metadata } from 'next'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { loadCaseStudies } from '@/lib/mdx'
 import { Termine } from '@/components/Termine'
 
 const clients = [
-  ['Lamm Bar, Prenzlauer Berg, seit 2019'],
-  ['Lab, Kreuzberg, seit 2019'],
-  ['Bademeister, Weissensee, seit 2021'],
-  ['Stück, Kreuzberg, seit 2021'],
-  ['Torte, Neukölln, seit 2023'],
-  ['Nonno, Schöneberg, seit 2023'],
-  ['Pannierstraße 57, Neukölln, seit 2024'],
-  ['More to come...'],
+  { name: 'Lamm, Prenzlauer Berg, seit 2019', href: 'https://lammbar.de/' },
+  { name: 'Lab, Kreuzberg, seit 2019', href: '#' },
+  { name: 'Bademeister, Weissensee, seit 2021', href: 'https://bademeisterbar.de/' },
+  { name: 'Stück, Kreuzberg, seit 2021', href: 'https://www.instagram.com/stueck_36/?hl=de' },
+  { name: 'Torte, Neukölln, seit 2023', href: 'https://www.torte-bar.de/' },
+  { name: 'Nonno, Schöneberg, seit 2023', href: 'https://www.instagram.com/bar.nonno.berlin/' },
+  { name: 'Pannierstraße 57, Neukölln, seit 2024', href: '#' },
+  { name: 'More to come...', href: '#' },
 ]
 
 function Clients() {
@@ -32,10 +31,15 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
+            {clients.map((client) => (
+              <li key={client.name}>
                 <FadeIn>
-                  <p className='text-xl text-white font-bold'>{client}</p>
+                  <a
+                    href={client.href}
+                    className="text-xl font-bold text-white"
+                  >
+                    {client.name}
+                  </a>
                 </FadeIn>
               </li>
             ))}
@@ -47,22 +51,29 @@ function Clients() {
 }
 
 export const metadata: Metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
+  description: 'Wir sind die Barschule.',
 }
 
 export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
 
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Die Barschule Berlin besser jehts nit!
+            Die Barschule - Wir zeigen euch wie Bar geht.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Wir sind eine Barschule in Berlin und bieten Kurse für Anfänger und Fortgeschrittene an. Unsere Kurse sind für alle Altersgruppen und Niveaus geeignet. Wir bieten eine Vielzahl von Kursen an, die von Grundlagenkursen bis hin zu fortgeschrittenen Kursen reichen. Unsere Kurse sind so konzipiert, dass sie Spaß machen und gleichzeitig lehrreich sind. Wir haben erfahrene Lehrer, die Ihnen helfen, Ihre Fähigkeiten zu verbessern und Ihr Wissen zu erweitern. Wir bieten auch Kurse für Menschen an, die bereits Erfahrung im Bereich Bar haben und ihre Fähigkeiten verbessern möchten. Unsere Kurse sind so konzipiert, dass sie Spaß machen und gleichzeitig lehrreich sind. Wir haben erfahrene Lehrer, die Ihnen helfen, Ihre Fähigkeiten zu verbessern und Ihr Wissen zu erweitern.
+            Wir sind Die Barschule in Berlin und möchten unser Wissen darüber,
+            wie man zwanglose Gastronomie betreibt, die auf beiden Seiten Spaß
+            macht, mit euch teilen. Unsere Kurse richten sich in erster Linie an
+            unsere eigenen Mitarbeiter*innen, um ihnen die Möglichkeit zu
+            bieten, sich stetig weiterzuentwickeln. Solltet ihr vom Barfach sein
+            und wir haben euer Interesse geweckt, schickt uns gerne eine
+            Nachricht und wir finden dazu eine Möglichkeit. Auf Anfrage bieten
+            wir auch Cocktailkurse für Firmenevents und Heimbartender*innen an.
+            Unsere Lektionen sind so konzipiert, dass sie Spaß machen und
+            gleichzeitig lehrreich sind.
           </p>
         </FadeIn>
       </Container>
