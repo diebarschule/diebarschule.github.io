@@ -8,10 +8,19 @@ import { Termine } from '@/components/Termine'
 const clients = [
   { name: 'Lamm, Prenzlauer Berg, seit 2019', href: 'https://lammbar.de/' },
   { name: 'Lab, Kreuzberg, seit 2019', href: '#' },
-  { name: 'Bademeister, Weissensee, seit 2021', href: 'https://bademeisterbar.de/' },
-  { name: 'Stück, Kreuzberg, seit 2021', href: 'https://www.instagram.com/stueck_36/?hl=de' },
+  {
+    name: 'Bademeister, Weissensee, seit 2021',
+    href: 'https://bademeisterbar.de/',
+  },
+  {
+    name: 'Stück, Kreuzberg, seit 2021',
+    href: 'https://www.instagram.com/stueck_36/?hl=de',
+  },
   { name: 'Torte, Neukölln, seit 2023', href: 'https://www.torte-bar.de/' },
-  { name: 'Nonno, Schöneberg, seit 2023', href: 'https://www.instagram.com/bar.nonno.berlin/' },
+  {
+    name: 'Nonno, Schöneberg, seit 2023',
+    href: 'https://www.instagram.com/bar.nonno.berlin/',
+  },
   { name: 'Pannierstraße 57, Neukölln, seit 2024', href: '#' },
   { name: 'More to come...', href: '#' },
 ]
@@ -36,6 +45,8 @@ function Clients() {
                 <FadeIn>
                   <a
                     href={client.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-xl font-bold text-white"
                   >
                     {client.name}
@@ -55,7 +66,6 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -77,7 +87,7 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-      <Clients />
+      {/* <Clients /> */}
       <Termine />
       <ContactSection />
     </>
