@@ -20,18 +20,11 @@ jobs:
         with:
           node-version: '16' # Specify the Node.js version you need
 
-      - name: Install Bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          export BUN_INSTALL="$HOME/.bun"
-          export PATH="$BUN_INSTALL/bin:$PATH"
-          bun --version
-
       - name: Install dependencies
-        run: bun install
+        run: npm install
 
       - name: Run deploy script
-        run: bun run deploy
+        run: npm run deploy
 
       - name: Create CNAME file
         run: echo "your-custom-domain.com" > out/CNAME
