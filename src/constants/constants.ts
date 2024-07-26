@@ -1,11 +1,5 @@
 export const events = [
     {
-      title: 'Lektion 1',
-      date: '17-06-2024',
-      type: 'Workshop',
-      description: 'Wir über uns - lernt unser Unternehmen kennen.',
-    },
-    {
       title: 'Lektion 2',
       date: '24-06-2024',
       type: 'Workshop',
@@ -70,5 +64,11 @@ export const events = [
       date: '02-09-2024',
       type: 'Workshop',
       description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
+    },
+     {
+      title: 'Lektion 1',
+      date: '17-06-2024',
+      type: 'Workshop',
+      description: 'Wir über uns - lernt unser Unternehmen kennen.',
     },
   ]
