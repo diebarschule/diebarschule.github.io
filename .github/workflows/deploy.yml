@@ -13,18 +13,18 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false  # Required to use a different token for pushing
+          persist-credentials: false # This is necessary to use a different token for pushing
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.17.0'
+          node-version: '18.17.0' # Ensure Node.js version is compatible
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run deploy script
-        run: npm run deploy
+      - name: Run build script
+        run: npm run build
 
       - name: Create CNAME file
         run: echo "www.diebarschule.de" > out/CNAME
@@ -35,8 +35,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          cname: www.diebarschule.de
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx gh-pages -d out -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git -b gh-pages
