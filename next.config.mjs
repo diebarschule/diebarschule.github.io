@@ -14,8 +14,8 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  basePath: '/diebarschule.github.io',
-  assetPrefix: '/diebarschule.github.io/',
+  basePath: '/https://www.diebarschule.github.io',
+  assetPrefix: '/https://www.diebarschule.github.io/',
   output: 'export',
 }
 
