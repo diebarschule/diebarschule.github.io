@@ -45,5 +45,5 @@ jobs:
           git reset --hard
           cp -r out/* .
           git add --all
-          git commit -m "Deploy to GitHub Pages"
+          git commit -m "Deploy to Github Pages"
           git push --force origin gh-pages
