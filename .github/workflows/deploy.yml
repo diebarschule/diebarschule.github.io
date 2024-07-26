@@ -13,12 +13,12 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false # This is necessary to use a different token for pushing
+          persist-credentials: false  # This is necessary to use a different token for pushing
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.17.0' # Update the Node.js version to 18.17.0 or later
+          node-version: '18.17.0'  # Ensure this matches your required version
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +27,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git config --global init.defaultBranch main
 
       - name: Run deploy script
         run: npm run deploy
@@ -37,13 +36,19 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}  # Ensure this secret contains your GitHub token
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          # Install gh-pages package if not already included in your deploy script
+          npm install -g gh-pages
+
+          # Configure the git remote URL with the token
+          git remote set-url origin https://x-access-token:${MY_GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          
+          # Fetch, switch, and deploy
           git fetch
           git switch --orphan gh-pages
           git reset --hard
           cp -r out/* .
           git add --all
-          git commit -m "Deploy to Github Pages"
+          git commit -m "Deploy to GitHub Pages"
           git push --force origin gh-pages
