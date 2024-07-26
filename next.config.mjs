@@ -14,8 +14,8 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  basePath: '/diebarschule.github.io',
-  assetPrefix: '/diebarschule.github.io/',
+  basePath: '/diebarschule/diebarschule.github.io',
+  assetPrefix: '/diebarschule/diebarschule.github.io/',
   output: 'export',
 }
 
@@ -34,7 +34,7 @@ function remarkMDXLayout(source, metaName) {
         type: 'mdxjsEsm',
         value: imp,
         data: { estree: parser.parse(imp, parseOptions) },
-      },
+      },  
       {
         type: 'mdxjsEsm',
         value: exp,
