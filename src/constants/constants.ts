@@ -1,10 +1,5 @@
 export const events = [
-    {
-      title: 'Lektion 7',
-      date: '29-07-2024',
-      type: 'Workshop',
-      description: 'R(h)um, Chachaca, Mezcal und Tequila - Spirituosen aus der Karibik und Lateinamerika.',
-    },
+   
     {
       title: 'Lektion 8',
       date: '19-08-2024',
@@ -55,20 +50,26 @@ export const events = [
     },
     {
       title: 'Lektion 4',
-      date: '14-10-2024',
+      date: '21-10-2024',
       type: 'Workshop',
       description: 'How to tend it? - Lernt die Techniken und das Verhalten an der Bar kennen.',
     },
     {
       title: 'Lektion 5',
-      date: '21-10-2024',
+      date: '28-10-2024',
       type: 'Workshop',
       description: 'How to create? - Entwerft eure eigenen Drinks.',
     },
      {
       title: 'Lektion 6',
-      date: '28-10-2024',
+      date: '04-11-2024',
       type: 'Workshop',
       description: 'Wodka, Gin und Korn - Klare Sache.',
     },
-  ]
+   {
+      title: 'Lektion 7',
+      date: '11-11-2024',
+      type: 'Workshop',
+      description: 'R(h)um, Chachaca, Mezcal und Tequila - Spirituosen aus der Karibik und Lateinamerika.',
+    }
+    ]
