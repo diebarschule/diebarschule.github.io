@@ -67,7 +67,7 @@ export default async function Termine() {
         title="Wir bieten euch monatlich mehrere Termine an um euch die Möglichkeit zu geben, uns und unsere Arbeit kennenzulernen. Wir freuen uns auf euch!"
       >
         <p>
-          Unsere Kurse finden regulär immer Montagabend von 18 Uhr bis ca. 19:30
+          Unsere Kurse finden regulär immer Montagabend von 18 Uhr bis ca. 20:00
           Uhr statt, danach gibt es noch ein entspanntes get together vor Ort.
           Solltest du ein/-e Mitarbeiter*in sein, bedarf es keiner Anmeldung,
           komm einfach vorbei! Falls du in einer anderen Bar arbeitest und gerne
