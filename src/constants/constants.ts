@@ -5,13 +5,13 @@ export const events = [
       title: 'Lektion 9',
       date: '26-08-2024',
       type: 'Workshop',
-      description: 'Wein, Schaum- und Perlwein - in vino veritas.',
+      description: 'Bier und Craft Beer - Hopfen und Malz, Gott erhalt's.',
     },
     {
       title: 'Lektion 10',
       date: '02-09-2024',
       type: 'Workshop',
-      description: 'Bier und Craft Beer - Hopfen und Malz, Gott erhalt`s.',
+      description: 'Wein, Schaum- und Perlwein - in vino veritas.',
     },
     {
       title: 'Lektion 11',
