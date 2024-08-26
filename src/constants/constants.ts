@@ -5,7 +5,7 @@ export const events = [
       title: 'Lektion 9',
       date: '26-08-2024',
       type: 'Workshop',
-      description: 'Bier und Craft Beer - Hopfen und Malz, Gott erhalt's.',
+      description: 'Bier und Craft Beer - Hopfen und Malz, Gott erhalts.',
     },
     {
       title: 'Lektion 10',
