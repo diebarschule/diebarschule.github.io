@@ -1,11 +1,6 @@
 export const events = [
    
-    {
-      title: 'Lektion 8',
-      date: '19-08-2024',
-      type: 'Workshop',
-      description: 'Whisk(e)y - uisge beatha.',
-    },
+   
     {
       title: 'Lektion 9',
       date: '26-08-2024',
@@ -71,5 +66,11 @@ export const events = [
       date: '11-11-2024',
       type: 'Workshop',
       description: 'R(h)um, Chachaca, Mezcal und Tequila - Spirituosen aus der Karibik und Lateinamerika.',
-    }
-    ]
+    },
+   {
+      title: 'Lektion 8',
+      date: '18-11-2024',
+      type: 'Workshop',
+      description: 'Whisk(e)y - uisge beatha.',
+    }    
+]
