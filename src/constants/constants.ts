@@ -71,6 +71,6 @@ export const events = [
       title: 'Lektion 9',
       date: '26-11-2024',
       type: 'Ausflug',
-      description: 'Bier und Craft Beer - Exkusion zu BRLO',
+      description: 'Bier und Craft Beer - Exkursion zu BRLO',
     }
 ]
