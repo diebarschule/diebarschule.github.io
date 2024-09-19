@@ -2,12 +2,6 @@ export const events = [
    
    
     {
-      title: 'Lektion 11',
-      date: '16-09-2024',
-      type: 'Workshop',
-      description: 'Liköre und sonstige Spirituosen - eine Übersicht.',
-    },
-    {
       title: 'Lektion 12',
       date: '23-09-2024',
       type: 'Workshop',
@@ -73,4 +67,9 @@ export const events = [
       type: 'Workshop',
       description: 'Wein, Schaum- und Perlwein - in vino veritas.',
     },
-]
+    {
+      title: 'Lektion 11',
+      date: '17-12-2024',
+      type: 'Workshop',
+      description: 'Liköre und sonstige Spirituosen - eine Übersicht.',
+    },]
