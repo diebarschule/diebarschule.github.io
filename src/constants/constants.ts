@@ -63,13 +63,13 @@ export const events = [
     },
     {
       title: 'Lektion 10',
-      date: '10-12-2024',
+      date: '09-12-2024',
       type: 'Workshop',
       description: 'Wein, Schaum- und Perlwein - in vino veritas.',
     },
     {
       title: 'Lektion 11',
-      date: '17-12-2024',
+      date: '16-12-2024',
       type: 'Workshop',
       description: 'Liköre und sonstige Spirituosen - eine Übersicht.',
     },]
