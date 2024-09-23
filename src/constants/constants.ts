@@ -72,4 +72,4 @@ export const events = [
       date: '06-01-2025',
       type: 'Workshop',
       description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
-    },
+    },]
