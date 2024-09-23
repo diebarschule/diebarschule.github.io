@@ -2,12 +2,6 @@ export const events = [
    
    
     {
-      title: 'Lektion 12',
-      date: '23-09-2024',
-      type: 'Workshop',
-      description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
-    },
-    {
       title: 'Lektion 1',
       date: '30-09-2024',
       type: 'Workshop',
@@ -72,4 +66,10 @@ export const events = [
       date: '16-12-2024',
       type: 'Workshop',
       description: 'Liköre und sonstige Spirituosen - eine Übersicht.',
-    },]
+    },
+{
+      title: 'Lektion 12',
+      date: '06-01-2025',
+      type: 'Workshop',
+      description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
+    },
