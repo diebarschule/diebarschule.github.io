@@ -2,12 +2,6 @@ export const events = [
    
    
     {
-      title: 'Lektion 2',
-      date: '21-10-2024',
-      type: 'Workshop',
-      description: ' Was ist guter Service? - Werdet Profis in unseren Serviceabläufen.',
-    },
-    {
       title: 'Lektion 3',
       date: '28-10-2024',
       type: 'Workshop',
@@ -67,7 +61,12 @@ export const events = [
       type: 'Workshop',
       description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
     },
-   {
+{
+      title: 'Lektion 2',
+      date: '20-01-2024',
+      type: 'Workshop',
+      description: ' Was ist guter Service? - Werdet Profis in unseren Serviceabläufen.',
+    }
       title: 'Lektion 1',
       date: '07-10-2024',
       type: 'Workshop',
