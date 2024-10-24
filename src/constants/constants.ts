@@ -71,4 +71,4 @@ export const events = [
       date: '07-10-2024',
       type: 'Workshop',
       description: 'Wir über uns - lernt unser Unternehmen kennen.',
-    }]
+    }
