@@ -11,7 +11,7 @@ export const events = [
       title: 'Lektion 5 - Special',
       date: '11-11-2024',
       type: 'Exkursion & Workshop',
-      description: 'How to create? - Entwerft eure eigenen Drinks.', diesmal zu Besuch im Lab!
+      description: 'How to create? - Entwerft eure eigenen Drinks, diesmal zu Besuch im Lab!'
     },
      {
       title: 'Lektion 6',
