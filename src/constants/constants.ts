@@ -2,22 +2,16 @@ export const events = [
    
    
     {
-      title: 'Lektion 3',
-      date: '28-10-2024',
-      type: 'Workshop',
-      description: ' How to stock it? - Bereitet euch den Barbereich optimal vor.',
-    },
-    {
       title: 'Lektion 4',
       date: '04-11-2024',
       type: 'Workshop',
       description: 'How to tend it? - Lernt die Techniken und das Verhalten an der Bar kennen.',
     },
     {
-      title: 'Lektion 5',
+      title: 'Lektion 5 - Special',
       date: '11-11-2024',
-      type: 'Workshop',
-      description: 'How to create? - Entwerft eure eigenen Drinks.',
+      type: 'Exkursion & Workshop',
+      description: 'How to create? - Entwerft eure eigenen Drinks.', diesmal zu Besuch im Lab!
     },
      {
       title: 'Lektion 6',
@@ -51,7 +45,7 @@ export const events = [
     },
     {
       title: 'Lektion 11',
-      date: '06-01-2024',
+      date: '06-01-2025',
       type: 'Workshop',
       description: 'Liköre und sonstige Spirituosen - eine Übersicht.',
     },
@@ -61,14 +55,21 @@ export const events = [
       type: 'Workshop',
       description: 'How to manage? - Lernt ein Team zu führen und eine Bar eigenständig zu managen.',
     },
-{
-      title: 'Lektion 2',
-      date: '20-01-2024',
-      type: 'Workshop',
-      description: ' Was ist guter Service? - Werdet Profis in unseren Serviceabläufen.',
-    }
-      title: 'Lektion 1',
-      date: '07-10-2024',
+{ title: 'Lektion 1',
+      date: '20-01-2025',
       type: 'Workshop',
       description: 'Wir über uns - lernt unser Unternehmen kennen.',
+    },
+{
+      title: 'Lektion 2',
+      date: '27-01-2025',
+      type: 'Workshop',
+      description: ' Was ist guter Service? - Werdet Profis in unseren Serviceabläufen.',
+    },
+{
+      title: 'Lektion 3',
+      date: '03-02-2025',
+      type: 'Workshop',
+      description: ' How to stock it? - Bereitet euch den Barbereich optimal vor.',
     }
+     
