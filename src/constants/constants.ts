@@ -71,5 +71,5 @@ export const events = [
       date: '03-02-2025',
       type: 'Workshop',
       description: ' How to stock it? - Bereitet euch den Barbereich optimal vor.',
-    }
+    }]
      
