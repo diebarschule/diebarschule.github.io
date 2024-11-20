@@ -1,24 +1,6 @@
 export const events = [
    
    
-    {
-      title: 'Lektion 4',
-      date: '04-11-2024',
-      type: 'Workshop',
-      description: 'How to tend it? - Lernt die Techniken und das Verhalten an der Bar kennen.',
-    },
-    {
-      title: 'Lektion 5 - Special',
-      date: '11-11-2024',
-      type: 'Exkursion & Workshop',
-      description: 'How to create? - Entwerft eure eigenen Drinks, diesmal zu Besuch im Lab!'
-    },
-     {
-      title: 'Lektion 6',
-      date: '18-11-2024',
-      type: 'Workshop',
-      description: 'Wodka, Gin und Korn - Klare Sache.',
-    },
    {
       title: 'Lektion 7',
       date: '25-11-2024',
@@ -71,5 +53,23 @@ export const events = [
       date: '03-02-2025',
       type: 'Workshop',
       description: ' How to stock it? - Bereitet euch den Barbereich optimal vor.',
+    }, 
+{
+      title: 'Lektion 4',
+      date: '10-02-2025',
+      type: 'Workshop',
+      description: 'How to tend it? - Lernt die Techniken und das Verhalten an der Bar kennen.',
+    },
+{
+      title: 'Lektion 5 - Special',
+      date: '17-02-2025',
+      type: 'Exkursion & Workshop',
+      description: 'How to create? - Entwerft eure eigenen Drinks, diesmal zu Besuch im Lab!'
+    },
+{
+      title: 'Lektion 6',
+      date: '24-02-2025',
+      type: 'Workshop',
+      description: 'Wodka, Gin und Korn - Klare Sache.',
     }]
      
